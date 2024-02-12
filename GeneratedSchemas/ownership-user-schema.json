@@ -1,6 +1,10 @@
 {
-    "project name": "Beneficial Ownership Database Metadata",
-    "type": "object",
+    "name": "Beneficial Ownership Database Metadata",
+    "ownership_type": 
+    {
+      "type": "string",
+      "enum": ["MLflow", "Database", "ETL_pipelines", "Model", "Report"]
+    },
     "properties": {
       "business_group": {
         "type": "string",
