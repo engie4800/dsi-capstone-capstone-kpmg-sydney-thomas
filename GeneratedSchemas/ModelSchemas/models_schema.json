@@ -1,0 +1,80 @@
+{
+    "models": [
+        {
+            "name": "FinancialAnalysisModel",
+            "version": "1.0",
+            "description": "Analyzes financial data for trends, forecasts, and insights. Includes key financial metrics for comprehensive analysis.",
+            "fields": [
+                {
+                    "name": "revenue",
+                    "type": "float",
+                    "description": "Total revenue"
+                },
+                {
+                    "name": "cost",
+                    "type": "float",
+                    "description": "Total cost"
+                },
+                {
+                    "name": "profitMargin",
+                    "type": "float",
+                    "description": "Profit margin percentage"
+                }
+            ]
+        },
+        {
+            "name": "ClientManagementModel",
+            "version": "1.0",
+            "description": "Manages client information, engagement history, and service preferences for personalized services.",
+            "fields": [
+                {
+                    "name": "clientName",
+                    "type": "string",
+                    "description": "Name of the client"
+                },
+                {
+                    "name": "contactInformation",
+                    "type": "string",
+                    "description": "Contact information"
+                },
+                {
+                    "name": "serviceHistory",
+                    "type": "string",
+                    "description": "History of services provided"
+                },
+                {
+                    "name": "preferences",
+                    "type": "string",
+                    "description": "Client preferences"
+                }
+            ]
+        },
+        {
+            "name": "AuditProcessModel",
+            "version": "1.0",
+            "description": "Tracks and manages audit processes, findings, and recommendations to ensure compliance and improvement.",
+            "fields": [
+                {
+                    "name": "auditDate",
+                    "type": "date",
+                    "description": "Date of the audit"
+                },
+                {
+                    "name": "findings",
+                    "type": "string",
+                    "description": "Audit findings"
+                },
+                {
+                    "name": "recommendations",
+                    "type": "string",
+                    "description": "Audit recommendations"
+                },
+                {
+                    "name": "actionItems",
+                    "type": "string",
+                    "description": "Action items for improvement"
+                }
+            ]
+        }
+    ]
+}
