@@ -1,0 +1,82 @@
+{
+    "etl_pipeline_name": "Comprehensive Data Integration for Analytics",
+    "description": "A pipeline designed to integrate various data sources including MLflow data, database content, metadata, existing ETL pipelines, and user & ownership information into a unified data warehouse for advanced analytics.",
+    "data_sources": [
+      {
+        "name": "MLflow_Data",
+        "type": "ml_metrics",
+        "connection_details": {
+          "api_endpoint": "https://mlflow.example.com/api/",
+          "authentication": "API_Key"
+        }
+      },
+      {
+        "name": "Database_Content",
+        "type": "relational_database",
+        "connection_details": {
+          "database_type": "PostgreSQL",
+          "host": "db.example.com",
+          "database_name": "Operational_DB"
+        }
+      },
+      {
+        "name": "Database_Metadata",
+        "type": "metadata_repository",
+        "connection_details": {
+          "repository_type": "Git",
+          "url": "https://git.example.com/metadata_repo",
+          "authentication": "SSH_Key"
+        }
+      },
+      {
+        "name": "Existing_ETL_Pipelines",
+        "type": "etl_metadata",
+        "connection_details": {
+          "management_system": "Airflow",
+          "api_endpoint": "https://airflow.example.com/api/",
+          "authentication": "Bearer_Token"
+        }
+      },
+      {
+        "name": "User_Ownership_Data",
+        "type": "ownership_records",
+        "connection_details": {
+          "source_type": "CRM",
+          "api_endpoint": "https://crm.example.com/api/",
+          "authentication": "OAuth2"
+        }
+      },
+      {
+        "name": "Additional_DataSource",
+        "description": "Template for additional data sources as required.",
+        "type": "custom",
+        "connection_details": {
+          "custom_field": "Custom value"
+        }
+      }
+    ],
+    "transformations": [
+    {
+        "name": "Currency_Normalization",
+        "description": "Convert all financial figures to a single currency for reporting purposes.",
+        "rules": [
+            {
+            "if_field": "currency",
+            "not_equals": "USD",
+            "then_convert_currency": "USD",
+            "using_rate_field": "exchange_rate"
+            }
+        ]
+    },
+    {
+        "name": "De-duplication",
+        "description": "Remove duplicate records from data sets.",
+        "rules": [
+          {
+            "unique_on_fields": ["customer_id", "transaction_date"]
+          }
+        ]
+    }
+]
+}
+  

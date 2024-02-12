@@ -1,0 +1,52 @@
+{
+    "name": "Beneficial Ownership Database Metadata",
+    "ownership_type": 
+    {
+      "type": "string",
+      "enum": ["MLflow", "Database", "ETL_pipelines", "Model", "Report"]
+    },
+    "properties": {
+      "business_group": {
+        "type": "string",
+        "description": "The business group that the database is associated with, e.g., compliance, legal."
+      },
+      "key_contact_information": {
+        "type": "array",
+        "description": "Contact information for individuals responsible for the database management.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "The name of the key contact."
+            },
+            "email": {
+              "type": "string",
+              "description": "The email address of the key contact."
+            }
+          }
+        }
+      },
+      "entitlements": {
+        "type": "array",
+        "description": "Access entitlements for users and service accounts, with possible extensions for audit trails and access logs.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "user_or_service_account": {
+              "type": "string",
+              "description": "The user or service account with access entitlements."
+            },
+            "entitlements": {
+              "type": "array",
+              "description": "Specific entitlements granted, e.g., read, write, admin, with possible extensions for viewing relationships or ownership details.",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
