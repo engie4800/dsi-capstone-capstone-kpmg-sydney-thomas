@@ -1,0 +1,70 @@
+{
+    "name": "End-User Business Report",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the report.",
+            "example": "Sales by Product"
+        },
+        "type": {
+            "type": "string",
+            "description": "The type of report.",
+            "example": "Excel / CSV extract"
+        },
+        "sections": {
+            "type": "array",
+            "description": "The sections of the report.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the section.",
+                        "example": "Sales"
+                    },
+                    "fields": {
+                        "type": "array",
+                        "description": "The fields in the section.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "The unique ID of the field.",
+                                    "example": "sales_amount"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "The common name of the field.",
+                                    "example": "Sales Amount"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "entitlements": {
+            "type": "array",
+            "description": "The users who are allowed to access the report.",
+            "items": {
+                "type": "string",
+                "description": "The email address of the user."
+            }
+        },
+        "business_group": {
+            "type": "string",
+            "description": "The business group that the report belongs to.",
+            "example": "marketing"
+        },
+        "maintainers": {
+            "type": "array",
+            "description": "The users who are allowed to maintain the report.",
+            "items": {
+                "type": "string",
+                "description": "The email address of the user."
+            }
+        }
+    }
+}

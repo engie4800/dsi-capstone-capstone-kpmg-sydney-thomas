@@ -1,0 +1,274 @@
+{
+  "name": "End-User Business Report",
+  "type": "object",
+  "properties": 
+    {
+      "name": "Saudi Arabia budget report 2024",
+      "type": "PDF Document",
+      "sections": [
+        {
+        "name": "Budget summary",
+        "fields": [
+            {
+            "id": "total_revenue",
+            "name": "Total Revenue",
+            "description": "SAR 1,172 billion"
+            },
+            {
+            "id": "total_expenditure",
+            "name": "Total Expenditure",
+            "description": "SAR 1,251 billion"
+            },
+            {
+            "id": "budget_deficit",
+            "name": "Budget Deficit",
+            "description": "SAR 79 billion"
+            },
+            {
+            "id": "total_public_debt",
+            "name": "Total Public Debt",
+            "description": "SAR 1,103 billion"
+            },
+            {
+            "id": "tax_revenue",
+            "name": "Tax Revenue",
+            "description": "SAR 361 billion"
+            },
+            {
+            "id": "non_tax_revenue",
+            "name": "Non-Tax Revenue",
+            "description": "SAR 812 billion"
+            },
+            {
+            "id": "taxes_on_income_profits_capital_gains",
+            "name": "Taxes on Income, Profits, and Capital Gains",
+            "description": "SAR 279 billion"
+            },
+            {
+            "id": "taxes_on_goods_services",
+            "name": "Taxes on Goods and Services",
+            "description": "SAR 31 billion"
+            },
+            {
+            "id": "taxes_on_international_trade_transactions",
+            "name": "Taxes on International Trade and Transactions",
+            "description": "SAR 21 billion"
+            },
+            {
+            "id": "other_taxes",
+            "name": "Other Taxes",
+            "description": "SAR 30 billion"
+            }
+        ]
+    },
+    {
+        "name": "Key takeaways",
+        "fields": [
+            {
+            "id": "domestic_economic_recovery",
+            "name": "Domestic Economic Recovery",
+            "description": "Domestic economic recovery will support non-oil tax revenues. A pick-up in domestic consumption and broader private sector activity in 2024 will support non-oil tax revenues, partly compensating for relative weakness in oil-related public revenues that reflects lower international oil prices."
+            },
+            {
+            "id": "fiscal_indicators",
+            "name": "Fiscal Indicators",
+            "description": "A deterioration in fiscal indicators will be mild and of limited concern. The budget is expected to remain in deficit due to continued weakness in international oil prices and is estimated to remain close to the level for 2023. A budget deficit of 1.9 percent of GDP and a public debt stock of 25.9 percent of GDP represent low ratios relative to peers."
+            },
+            {
+            "id": "government_fiscal_balance_efforts",
+            "name": "Government Fiscal Balance Efforts",
+            "description": "Government efforts to balance fiscal sustainability and spending on economic reforms will continue. Vision 2030 objectives designed to restructure the economy will remain the thrust of government spending and investment."
+            },
+            {
+            "id": "key_spending_categories",
+            "name": "Key Spending Categories",
+            "description": "Key spending categories will remain stable. The 2024 budget indicates that the Health and social development, Defense, Education and Infrastructure and transport categories will remain priority sectors in terms of public spending."
+            },
+            {
+            "id": "external_economic_shocks",
+            "name": "External Economic Shocks",
+            "description": "External economic shocks remain key risks to fiscal and broader economic policy success. Policy mismanagement and geopolitical tensions could derail ongoing economic recovery."
+            }
+        ]
+    },
+        {
+        "name": "Economic growth assumptions",
+        "fields": [
+            {
+            "id": "rapid_real_GDP_growth",
+            "name": "Rapid Real GDP Growth",
+            "description": "According to the Ministry of Finance (MoF), after rapid real GDP annual average growth of 8.7 percent YoY in fiscal year 2022, the economy is estimated to expand by a lower annual rate of 0.03 percent in 2023."
+            },
+            {
+            "id": "non_oil_sector_growth",
+            "name": "Non-Oil Sector Growth",
+            "description": "The non-oil sector is estimated to expand at a healthy rate, supported by a range of sub-sectors. Investor and broader private sector confidence continues to benefit from government spending on Vision Realisation Programs (VRPs) and infrastructure investment more generally."
+            },
+            {
+            "id": "oil_consumption_estimates",
+            "name": "Oil Consumption Estimates",
+            "description": "The Energy Information Administration (EIA) estimates that oil consumption will stand at an annual average of 101 million barrels per day (mb/d) in 2023, compared with 99.2 mb/d in 2022. The EIA expects oil consumption to rise to an annual average of 102.4 mb/d in 2024, with oil prices remaining well below their 2022 levels."
+            },
+            {
+            "id": "private_consumption_and_non_oil_activity",
+            "name": "Private Consumption and Non-Oil Activity",
+            "description": "Private consumption continues to be bolstered by government initiatives, supporting non-oil tax revenues. Despite the continuation of weakened international oil prices, the Vision 2030 initiatives will continue to stimulate the broader economy via related projects and domestic spending."
+            },
+            {
+            "id": "real_GDP_recovery",
+            "name": "Real GDP Recovery",
+            "description": "Overall, the Ministry of Finance's expectations are that real GDP will recover to a growth rate of 4.4 percent in 2024."
+            }
+        ]
+        },
+        {
+        "name": "Budget 2024",
+        "fields": [
+            {
+            "id": "cabinet_approval",
+            "name": "Cabinet Approval",
+            "description": "Saudi Arabia’s cabinet approved the budget for fiscal year 2024 on 6 December 2023. The government’s focus remains balancing public spending that drives economic diversification with fiscal sustainability."
+            },
+            {
+            "id": "revenue_growth",
+            "name": "Revenue Growth",
+            "description": "The 2024 fiscal year budget statement estimates a 5.9 percent YoY drop in total revenues, to SAR1,193 billion, largely in line with a fall in international oil prices. The out-turn is nevertheless greater than the revenue estimate of SAR1,130 billion tented in the 2023 fiscal year budget statement."
+            },
+            {
+            "id": "tax_revenues",
+            "name": "Tax Revenues",
+            "description": "Despite weaker international oil prices, tax revenues have seen less impact due to the extension of the Tax Cancellation grace period and an exemption of Financial Penalties that have encouraged taxpayers to meet their obligations before the end of 2023."
+            },
+            {
+            "id": "total_revenues_projection",
+            "name": "Total Revenues Projection",
+            "description": "Total revenues are projected to stand at SAR1,172 billion in 2024, comparable to the final estimated outcome for 2023. The budget for 2024 constitutes the government's approach to adopting conservative assumptions in relation to revenue growth."
+            },
+            {
+            "id": "public_revenue_comparison",
+            "name": "Public Revenue Comparison",
+            "description": "The higher than budgeted total revenues estimate for 2023, even as international oil prices have weakened, reflects several factors. Strong non-oil GDP growth during 2023 has seen tax revenues rising by 8.9 percent YoY, to SAR352 billion. Other measures that are supporting the tax revenue growth include an expansion of Financial Penalties that encourages taxpayers to settle their tax obligations before the end of 2023."
+            }
+        ]
+},
+        {
+        "name": "Expenditure by sector",
+        "fields": [
+            {
+            "id": "healthcare_and_social_development",
+            "name": "Healthcare and social development",
+            "description": "Spending on Healthcare and social development is estimated at SAR250 billion in 2023, up a robust 10.1 percent YoY and substantially higher than the planned spending of SAR189 billion announced in the 2023 budget statement. The 2024 budget for Healthcare and social development is set to remain relatively unchanged at SAR214 billion, continuing recent trends, such as initiatives that enhance access to healthcare and related services through investment in health-related physical infrastructure and broader social positive benefits."
+            },
+            {
+            "id": "defense",
+            "name": "Defense",
+            "description": "Defense spending indicates an expansion from SAR228 billion in 2022 to an estimated SAR248 billion in 2023, and is expected to rise further, to SAR269 billion, in 2024. The continued expansion in Defense spending reflects several factors, including the government's key policy priorities to increase investment in the short and medium-term with an objective of achieving forces upgrade and modernization objectives, enhancing capabilities of the domestic defense manufacturing industry and to create a platform to achieve long-term efficiencies."
+            },
+            {
+            "id": "education",
+            "name": "Education",
+            "description": "Spending on Education remained stable in 2023 relative to 2022, standing at SAR202 billion. The 2023 estimate for spending in this category is marginally higher than was originally announced in the 2023 budget statement. The main and ongoing focus of policies includes improving kindergarten participation, expanding school spaces and enhancing the training available to teaching personnel in order to support an improvement in teaching standards. Education spending is set to fall marginally in 2024, to SAR195 billion."
+            },
+            {
+            "id": "infrastructure_and_transportation",
+            "name": "Infrastructure and transportation",
+            "description": "Spending on Infrastructure and transportation fell by an estimated 9.8 percent YoY in 2023, to SAR37 billion. A number of transport infrastructure-related projects were completed or progressed. Spending will rise by only a modest 2 percent YoY in 2024, to SAR38 billion, in part a reflection of the government's efforts to encourage investment into this strategic economic segment by the private sector and public development funds."
+            }
+        ]
+},
+        {
+        "name": "Risks and challenges",
+        "fields": [
+            {
+            "id": "global_inflationary_pressures",
+            "name": "Global Inflationary Pressures",
+            "description": "Global inflationary pressures remain high and widespread across many advanced and emerging market economies. Upward inflation trends complicate government policies, particularly impacting public investment, goods, and services and could potentially undermine government revenue assumptions."
+            },
+            {
+            "id": "oil_economy_vulnerabilities",
+            "name": "Oil Economy Vulnerabilities",
+            "description": "For oil producers, economic vulnerabilities might be exacerbated by monetary policy responses to inflation in oil-consuming economies. A potential monetary policy-induced recession could decrease demand for oil, lowering oil prices and in turn public revenues for oil producers."
+            },
+            {
+            "id": "financial_market_instability",
+            "name": "Financial Market Instability",
+            "description": "Geopolitical tensions and policy responses to inflation by major central banks, which have led to raised interest rates, are contributing to uncertainty and volatility in financial markets. Such instability, especially if it leads to economic shocks in the short term, could weaken Saudi Arabia's fiscal position and complicate spending related to Vision 2030."
+            },
+            {
+            "id": "domestic_economic_impact",
+            "name": "Domestic Economic Impact",
+            "description": "Saudi Arabia’s non-oil domestic economy relies partly on oil-related financial inflows which impact the domestic economy through channels such as effects on consumer and investor confidence. Weakening non-oil economic activity could undermine government efforts to improve the non-oil income in the public revenue mix."
+            }
+        ]
+},
+        {
+        "name": "Economic indicators",
+        "fields": [
+        {
+        "id": "nominal_gdp",
+        "name": "Nominal GDP",
+        "description": "Nominal GDP is projected to be SAR 4,261 billion in 2024P, with a percentage change of 3.0% YoY."
+        },
+        {
+        "id": "real_gdp_change",
+        "name": "Real GDP Change",
+        "description": "Real GDP percentage change year-over-year is projected to be 4.4% in 2024P."
+        },
+        {
+        "id": "total_revenue",
+        "name": "Total Revenue",
+        "description": "Total revenue is projected to be SAR 1,172 billion in 2024P."
+        },
+        {
+        "id": "oil_revenue",
+        "name": "Oil Revenue",
+        "description": "Oil revenue data for 2024P is not provided in the chart."
+        },
+        {
+        "id": "non_oil_revenue",
+        "name": "Non-Oil Revenue",
+        "description": "Non-oil revenue data for 2024P is not provided in the chart."
+        },
+        {
+        "id": "expenditure",
+        "name": "Expenditure",
+        "description": "Expenditure is projected to be SAR 1,251 billion in 2024P."
+        },
+        {
+        "id": "surplus_deficit",
+        "name": "Surplus/Deficit",
+        "description": "The surplus/deficit is projected to be SAR -79 billion in 2024P."
+        },
+        {
+        "id": "gross_public_debt",
+        "name": "Gross Public Debt",
+        "description": "Gross public debt is projected to be SAR 1,103 billion in 2024P."
+        },
+        {
+        "id": "total_revenue_percentage_gdp",
+        "name": "Total Revenue as % of GDP",
+        "description": "Total revenue as a percentage of GDP is projected to be 27.5% in 2024P."
+        },
+        {
+        "id": "expenditure_percentage_gdp",
+        "name": "Expenditure as % of GDP",
+        "description": "Expenditure as a percentage of GDP is projected to be 29.4% in 2024P."
+        },
+        {
+        "id": "surplus_deficit_percentage_gdp",
+        "name": "Surplus/Deficit as % of GDP",
+        "description": "Surplus/Deficit as a percentage of GDP is projected to be -1.9% in 2024P."
+        },
+        {
+        "id": "gross_public_debt_percentage_gdp",
+        "name": "Gross Public Debt as % of GDP",
+        "description": "Gross public debt as a percentage of GDP is projected to be 25.9% in 2024P."
+        }
+      ]
+    }
+]
+},
+  "entitlements": ["asinghi@kpmg.com", "ialani@kpmg.com"],
+  "business group": "KPMG Professional Services",
+  "maintainers": "pbannink@kpmg.com"
+}
