@@ -1,0 +1,399 @@
+// create the report nodes
+create 
+    (r1: report {
+    name: "End-User Business Report",
+    report_format: "PDF Document",
+    business_group: "KPMG Professional Services",
+    maintainers: "pbannink@kpmg.com",
+    entitlements: ["asinghi@kpmg.com", "ialani@kpmg.com"]
+})
+
+// create the report sections
+create 
+    (r1)-[: HAS_SECTION]-> (s1: section {name: "Budget Summary"}),
+    (r1)-[: HAS_SECTION]-> (s2: section {name: "Key Takeaways"}),
+    (r1)-[: HAS_SECTION]-> (s3: section {name: "Economic growth assumptions"}),
+    (r1)-[: HAS_SECTION]-> (s4: section {name: "Budget 2024"}),
+    (r1)-[: HAS_SECTION]-> (s5: section {name: "Expenditure by sector"}),
+    (r1)-[: HAS_SECTION]-> (s6: section {name: "Risks and challenges"}),
+    (r1)-[: HAS_SECTION]-> (s7: section {name: "Economic indicators"})
+
+//create the report fields and parts
+create 
+    (s1)-[: HAS_FIELD]-> (f1: field {name: "Total Revenue", description: "SAR 1,172 billion"}),
+    (s1)-[: HAS_FIELD]-> (f2: field {name: "Total Expenditure", description: "SAR 1,251 billion"}),
+    (s1)-[: HAS_FIELD]-> (f3: field {name: "Budget Deficit", description: "SAR 79 billion"}),
+    (s1)-[: HAS_FIELD]-> (f4: field {name: "Total Public Debt", description: "SAR 1,103 billion"}),
+    (s1)-[: HAS_FIELD]-> (f5: field {name: "Tax Revenue", description: "SAR 361 billion"}),
+    (s1)-[: HAS_FIELD]-> (f6: field {name: "Non Tax Revenue", description: "SAR 812 billion"}),
+    (f5)-[: HAS_PART]-> (p1: part {name: "Taxes on Income, Profits, and Capital Gains", description: "SAR 279 billion"}),
+    (f5)-[: HAS_PART]-> (p2: part {name: "Taxes on Goods and Services", description: "SAR 31 billion"}),
+    (f5)-[: HAS_PART]-> (p3: part {name: "Taxes on International Trade and Transactions", description: "SAR 21 billion"}),
+    (f5)-[: HAS_PART]-> (p4: part {name: "Other Taxes", description: "SAR 30 billion"})
+
+create 
+    (s2)-[: HAS_FIELD]-> (f7: field {name: "Domestic Economic Recovery", description: "Domestic economic recovery will support non-oil tax revenues. A pick-up in domestic consumption and broader private sector activity in 2024 will support non-oil tax revenues, partly compensating for relative weakness in oil-related public revenues that reflects lower international oil prices."}),
+    (s2)-[: HAS_FIELD]-> (f8: field {name: "Fiscal Indicators", description: "A deterioration in fiscal indicators will be mild and of limited concern. The budget is expected to remain in deficit due to continued weakness in international oil prices and is estimated to remain close to the level for 2023. A budget deficit of 1.9 percent of GDP and a public debt stock of 25.9 percent of GDP represent low ratios relative to peers."}),
+    (s2)-[: HAS_FIELD]-> (f9: field {name: "Government Fiscal Balance Efforts", description: "Government efforts to balance fiscal sustainability and spending on economic reforms will continue. Vision 2030 objectives designed to restructure the economy will remain the thrust of government spending and investment."}),
+    (s2)-[: HAS_FIELD]-> (f10: field {name: "Key Spending Categories", description: "Key spending categories will remain stable. The 2024 budget indicates that the Health and social development, Defense, Education and Infrastructure and transport categories will remain priority sectors in terms of public spending."}),
+    (s2)-[: HAS_FIELD]-> (f11: field {name: "External Economic Shocks", description: "External economic shocks remain key risks to fiscal and broader economic policy success. Policy mismanagement and geopolitical tensions could derail ongoing economic recovery."})
+ 
+create 
+    (s3)-[: HAS_FIELD]-> (f12: field {
+  name: "Rapid Real GDP Growth",
+  description: "According to the Ministry of Finance (MoF), after rapid real GDP annual average growth of 8.7 percent YoY in fiscal year 2022, the economy is estimated to expand by a lower annual rate of 0.03 percent in 2023."
+}
+),
+    (s3)-[: HAS_FIELD]-> (f13: field {
+  name: "Non-Oil Sector Growth",
+  description: "The non-oil sector is estimated to expand at a healthy rate, supported by a range of sub-sectors. Investor and broader private sector confidence continues to benefit from government spending on Vision Realisation Programs (VRPs) and infrastructure investment more generally."
+}
+),
+    (s3)-[: HAS_FIELD]-> (f14: field {
+  name: "Oil Consumption Estimates",
+  description: "The Energy Information Administration (EIA) estimates that oil consumption will stand at an annual average of 101 million barrels per day (mb/d) in 2023, compared with 99.2 mb/d in 2022. The EIA expects oil consumption to rise to an annual average of 102.4 mb/d in 2024, with oil prices remaining well below their 2022 levels."
+}
+),
+    (s3)-[: HAS_FIELD]-> (f15: field {
+  name: "Private Consumption and Non-Oil Activity",
+  description: "Private consumption continues to be bolstered by government initiatives, supporting non-oil tax revenues. Despite the continuation of weakened international oil prices, the Vision 2030 initiatives will continue to stimulate the broader economy via related projects and domestic spending."
+}
+),
+    (s3)-[: HAS_FIELD]-> (f16: field {
+  name: "Real GDP Recovery",
+  description: "Overall, the Ministry of Finance's expectations are that real GDP will recover to a growth rate of 4.4 percent in 2024."
+}
+)
+
+create
+  (s4)-[: HAS_FIELD]->(f17:field {
+    name: "Cabinet Approval",
+    description: "Saudi Arabia’s cabinet approved the budget for fiscal year 2024 on 6 December 2023. The government’s focus remains balancing public spending that drives economic diversification with fiscal sustainability."
+  }),
+  (s4)-[: HAS_FIELD]->(f18:field {
+    name: "Revenue Growth",
+    description: "The 2024 fiscal year budget statement estimates a 5.9 percent YoY drop in total revenues, to SAR1,193 billion, largely in line with a fall in international oil prices. The out-turn is nevertheless greater than the revenue estimate of SAR1,130 billion tented in the 2023 fiscal year budget statement."
+  }),
+  (s4)-[: HAS_FIELD]->(f19:field {
+    name: "Tax Revenues",
+    description: "Despite weaker international oil prices, tax revenues have seen less impact due to the extension of the Tax Cancellation grace period and an exemption of Financial Penalties that have encouraged taxpayers to meet their obligations before the end of 2023."
+  }),
+  (s4)-[: HAS_FIELD]->(f20:field {
+    name: "Total Revenues Projection",
+    description: "Total revenues are projected to stand at SAR1,172 billion in 2024, comparable to the final estimated outcome for 2023. The budget for 2024 constitutes the government's approach to adopting conservative assumptions in relation to revenue growth."
+  }),
+  (s4)-[: HAS_FIELD]->(f21:field {
+    name: "Public Revenue Comparison",
+    description: "The higher than budgeted total revenues estimate for 2023, even as international oil prices have weakened, reflects several factors. Strong non-oil GDP growth during 2023 has seen tax revenues rising by 8.9 percent YoY, to SAR352 billion. Other measures that are supporting the tax revenue growth include an expansion of Financial Penalties that encourages taxpayers to settle their tax obligations before the end of 2023."
+    })
+
+create
+  (s5)-[: HAS_FIELD]->(f22:field {
+    name: "Healthcare and social development",
+    description: "Spending on Healthcare and social development is estimated at SAR250 billion in 2023, up a robust 10.1 percent YoY and substantially higher than the planned spending of SAR189 billion announced in the 2023 budget statement. The 2024 budget for Healthcare and social development is set to remain relatively unchanged at SAR214 billion, continuing recent trends, such as initiatives that enhance access to healthcare and related services through investment in health-related physical infrastructure and broader social positive benefits."
+  }),
+  (s5)-[:HAS_FIELD]->(f23:field {
+    name: "Defense",
+    description: "Defense spending indicates an expansion from SAR228 billion in 2022 to an estimated SAR248 billion in 2023, and is expected to rise further, to SAR269 billion, in 2024. The continued expansion in Defense spending reflects several factors, including the government's key policy priorities to increase investment in the short and medium-term with an objective of achieving forces upgrade and modernization objectives, enhancing capabilities of the domestic defense manufacturing industry and to create a platform to achieve long-term efficiencies."
+  }),
+  (s5)-[:HAS_FIELD]->(f24:field {
+    name: "Education",
+    description: "Spending on Education remained stable in 2023 relative to 2022, standing at SAR202 billion. The 2023 estimate for spending in this category is marginally higher than was originally announced in the 2023 budget statement. The main and ongoing focus of policies includes improving kindergarten participation, expanding school spaces and enhancing the training available to teaching personnel in order to support an improvement in teaching standards. Education spending is set to fall marginally in 2024, to SAR195 billion."
+  }),
+  (s5)-[:HAS_FIELD]->(f25:field {
+    name: "Infrastructure and transportation",
+    description: "Spending on Infrastructure and transportation fell by an estimated 9.8 percent YoY in 2023, to SAR37 billion. A number of transport infrastructure-related projects were completed or progressed. Spending will rise by only a modest 2 percent YoY in 2024, to SAR38 billion, in part a reflection of the government's efforts to encourage investment into this strategic economic segment by the private sector and public development funds."
+  })
+
+  create
+  (s6)-[:HAS_FIELD]->(f26:field {
+    name: "Global Inflationary Pressures",
+    description: "Global inflationary pressures remain high and widespread across many advanced and emerging market economies. Upward inflation trends complicate government policies, particularly impacting public investment, goods, and services and could potentially undermine government revenue assumptions."
+  }),
+  (s6)-[:HAS_FIELD]->(f27:field {
+    name: "Oil Economy Vulnerabilities",
+    description: "For oil producers, economic vulnerabilities might be exacerbated by monetary policy responses to inflation in oil-consuming economies. A potential monetary policy-induced recession could decrease demand for oil, lowering oil prices and in turn public revenues for oil producers."
+  }),
+  (s6)-[:HAS_FIELD]->(f28:field {
+    name: "Financial Market Instability",
+    description: "Geopolitical tensions and policy responses to inflation by major central banks, which have led to raised interest rates, are contributing to uncertainty and volatility in financial markets. Such instability, especially if it leads to economic shocks in the short term, could weaken Saudi Arabia's fiscal position and complicate spending related to Vision 2030."
+  }),
+  (s6)-[:HAS_FIELD]->(f29:field {
+    name: "Domestic Economic Impact",
+    description: "Saudi Arabia’s non-oil domestic economy relies partly on oil-related financial inflows which impact the domestic economy through channels such as effects on consumer and investor confidence. Weakening non-oil economic activity could undermine government efforts to improve the non-oil income in the public revenue mix."
+  })
+
+create
+  (s7)-[:HAS_FIELD]->(f30:field {
+    name: "Nominal GDP",
+    description: "Nominal GDP is projected to be SAR 4,261 billion in 2024P, with a percentage change of 3.0% YoY."
+  }),
+  (s7)-[:HAS_FIELD]->(f31:field {
+    name: "Real GDP Change",
+    description: "Real GDP percentage change year-over-year is projected to be 4.4% in 2024P."
+  }),
+  (s7)-[:HAS_FIELD]->(f32:field {
+    name: "Total Revenue",
+    description: "Total revenue is projected to be SAR 1,172 billion in 2024P."
+  }),
+  (s7)-[:HAS_FIELD]->(f33:field {
+    name: "Oil Revenue",
+    description: "Oil revenue data for 2024P is not provided in the chart."
+  }),
+  (s7)-[:HAS_FIELD]->(f34:field {
+    name: "Non-Oil Revenue",
+    description: "Non-oil revenue data for 2024P is not provided in the chart."
+  }),
+  (s7)-[:HAS_FIELD]->(f35:field {
+    name: "Expenditure",
+    description: "Expenditure is projected to be SAR 1,251 billion in 2024P."
+  }),
+  (s7)-[:HAS_FIELD]->(f36:field {
+    name: "Surplus/Deficit",
+    description: "The surplus/deficit is projected to be SAR -79 billion in 2024P."
+  }),
+  (s7)-[:HAS_FIELD]->(f37:field {
+    name: "Gross Public Debt",
+    description: "Gross public debt is projected to be SAR 1,103 billion in 2024P."
+  }),
+  (s7)-[:HAS_FIELD]->(f38:field {
+    name: "Total Revenue as % of GDP",
+    description: "Total revenue as a percentage of GDP is projected to be 27.5% in 2024P."
+  }),
+  (s7)-[:HAS_FIELD]->(f39:field {
+    name: "Expenditure as % of GDP",
+    description: "Expenditure as a percentage of GDP is projected to be 29.4% in 2024P."
+  }),
+  (s7)-[:HAS_FIELD]->(f40:field {
+    name: "Surplus/Deficit as % of GDP",
+    description: "Surplus/Deficit as a percentage of GDP is projected to be -1.9% in 2024P."
+  }),
+  (s7)-[:HAS_FIELD]->(f41:field {
+    name: "Gross Public Debt as % of GDP",
+    description: "Gross public debt as a percentage of GDP is projected to be 25.9% in 2024P."
+  })
+
+// create the model nodes
+create 
+(m1:model {
+  name: "model_782951116",
+  version: 3,
+  input_columns: '["revenue", "cost", "profitMargin", "tax_col"]',
+  output_column: "revenue",
+  created_at: "2024-02-12T20:59:17Z",
+  parameters: '[{name: "example_parameter", value: 77}]',
+  performance_metrics: '[
+    {name: "accuracy", value: 0.96},
+    {name: "precision", value: 0.79},
+    {name: "recall", value: 0.75}
+  ]',
+  author: '["Alex", "Martin"]'
+}) -[:FOLLOWS]-> (m2:model {
+  name: "model_811325792",
+  version: 2,
+  input_columns: '["clientName", "contactInformation", "serviceHistory", "preferences"]',
+  output_column: "clientName",
+  created_at: "2024-02-12T20:59:17Z",
+  parameters: '[{name: "example_parameter", value: 62}]',
+  performance_metrics: '[
+    {name: "accuracy", value: 0.89},
+    {name: "precision", value: 0.85},
+    {name: "recall", value: 0.69}
+  ]',
+  author: "Jerry"
+})
+
+create (m2)-[:FOLLOWS]-> (m3:model {
+  name: "model_701015291",
+  version: 1,
+  input_columns: '["auditDate", "findings", "recommendations", "actionItems"]',
+  output_column: "auditDate",
+  metadata: '{created_at: "2024-02-12T20:59:17Z", type: "example_type"}',
+  parameters: '[{name: "example_parameter", value: 36}]',
+  performance_metrics: '[
+    {name: "accuracy", value: 0.56},
+    {name: "precision", value: 0.67},
+    {name: "recall", value: 0.56}
+  ]',
+  author: "Harry"
+})
+
+
+// create model mapping nodes for "f1" - Total Revenue 
+
+create (mapping1: mapping {report_name: "End-User Business Report", upstream_source_type: "ml_model"}) -[:MAP]-> (m1)
+
+create (mapping1)-[:MAP]-> (f1)
+
+// create DB mapping nodes for "f1" - Total Revenue 
+
+create (d1: database {name: "sales"})
+create (d2: database {name: "client"})
+create (d3: database {name: "Audit Management"})
+
+create (d1)-[:HAS_TABLE]-> (t1: table {name: "cost_tb"})
+create (d1)-[:HAS_TABLE]-> (t2: table {name: "revenue_tb"})
+create (d1)-[:HAS_TABLE]-> (t3: table {name: "tax_tb"})
+create (d2)-[:HAS_TABLE]-> (t4: table {name: "client_tb"})
+create (d3)-[:HAS_TABLE]-> (t5: table {name: "audit_tb"})
+
+create (t2)-[:HAS_COLUMN]-> (c1: column {name: "revenue_col"})
+create (t3)-[:HAS_COLUMN]-> (c2: column {name: "tax_col"})
+create (t4)-[:HAS_COLUMN]-> (c3: column {name: "clientName_col"})
+create (t4)-[:HAS_COLUMN]-> (c4: column {name: "contactInformation_col"})
+create (t4)-[:HAS_COLUMN]-> (c5: column {name: "preferences_col"})
+create (t4)-[:HAS_COLUMN]-> (c6: column {name: "serviceHistory_col"})
+create (t2)-[:HAS_COLUMN]-> (c7: column {name: "profitMargin_col"})
+create (t1)-[:HAS_COLUMN]-> (c8: column {name: "cost_col"})
+create (t5)-[:HAS_COLUMN]-> (c9: column {name: "auditDate_col"})
+create (t5)-[:HAS_COLUMN]-> (c10: column {name: "findings"})
+create (t5)-[:HAS_COLUMN]-> (c11: column {name: "recommendations"})
+create (t5)-[:HAS_COLUMN]-> (c12: column {name: "actionItems"})
+
+create (mapping2: mapping {report_name: "End-User Business Report", upstream_source_type: "database_column"}) -[:MAP]-> (d1)
+create (mapping2)-[:MAP]-> (f1)
+create (mapping2)-[:MAP]-> (d2)
+create (mapping2)-[:MAP]-> (d3)
+
+// create mapping from model to data for "f1" - Total Revenue 
+
+create (m2)-[:HAS_INPUT]-> (c3)
+create (m2)-[:HAS_INPUT]-> (c4)
+create (m2)-[:HAS_INPUT]-> (c5)
+create (m2)-[:HAS_INPUT]-> (c6)
+
+create (m1)-[:HAS_INPUT]-> (c2)
+create (m1)-[:HAS_INPUT]-> (c1)
+create (m1)-[:HAS_INPUT]-> (c7)
+create (m1)-[:HAS_INPUT]-> (c8)
+
+create (m3)-[:HAS_INPUT]-> (c9)
+create (m3)-[:HAS_INPUT]-> (c10)
+create (m3)-[:HAS_INPUT]-> (c11)
+create (m3)-[:HAS_INPUT]-> (c12)
+
+
+
+// create model nodes for "f16" - Real GDP Recovery
+create 
+(m4:model {
+  name: "model_925814632",
+  version: 1,
+  input_columns: '["unemploymentRate", "consumerConfidence", "governmentSpending", "tax_col", "interestRates", "tradeBalance"]',
+  output_column: "realGDPGrowthRate",
+  created_at: "2024-02-20T09:00:00Z",
+  parameters: '[{name: "growth_rate_target", value: 4.4}]',
+  performance_metrics: '[
+    {name: "accuracy", value: 0.92},
+    {name: "precision", value: 0.88},
+    {name: "recall", value: 0.81}
+  ]',
+  author: '["Ministry of Finance"]'
+})
+
+create (mapping3: mapping {report_name: "End-User Business Report", upstream_source_type: "ml_model"}) -[:MAP]-> (m4)
+create (mapping3)-[:MAP]-> (f16)
+
+create (d4: database {name: "GDP"})
+
+create (d4)-[:HAS_TABLE]-> (t6: table {name: "economic_indicators_tb"})
+create (d4)-[:HAS_TABLE]-> (t7: table {name: "trade_balance_tb"})
+
+create (t6)-[:HAS_COLUMN]-> (c13: column {name: "unemploymentRate_col"})
+create (t6)-[:HAS_COLUMN]-> (c14: column {name: "consumerConfidence_col"})
+create (t6)-[:HAS_COLUMN]-> (c15: column {name: "governmentSpending_col"})
+create (t6)-[:HAS_COLUMN]-> (c16: column {name: "interestRates_col"})
+create (t7)-[:HAS_COLUMN]-> (c17: column {name: "tradeBalance_col"})
+
+create (mapping4: mapping {report_name: "End-User Business Report", upstream_source_type: "database_column"}) -[:MAP]-> (d4)
+create (mapping4)-[:MAP]-> (f16)
+
+create (m4)-[:HAS_INPUT]-> (c2)
+create (m4)-[:HAS_INPUT]-> (c13)
+create (m4)-[:HAS_INPUT]-> (c14)
+create (m4)-[:HAS_INPUT]-> (c15)
+create (m4)-[:HAS_INPUT]-> (c16)
+create (m4)-[:HAS_INPUT]-> (c17)
+
+// Create the main report node
+CREATE
+(r2:report {
+  name: "Global Economic Outlook - December 2023",
+  report_format: "PDF Document",
+  business_group: "KPMG International",
+  maintainers: "rmayor@kpmg.com",
+  entitlements: "jdoe@kpmg.com"
+})
+
+// Create the report sections
+CREATE
+(r2)-[:HAS_SECTION]->(s8:section {name: "The Global Outlook: Limited Upside in the Short Term"}),
+(r2)-[:HAS_SECTION]->(s9:section {name: "Global Trade and Value Chains: Shaken not Stirred"}),
+(r2)-[:HAS_SECTION]->(s10:section {name: "United States: The Economy Endures Headwinds"}),
+(r2)-[:HAS_SECTION]->(s11:section {name: "Canada: Economy Continues to Chill"}),
+(r2)-[:HAS_SECTION]->(s12:section {name: "Brazil: More Rate Cuts to Come"}),
+(r2)-[:HAS_SECTION]->(s13:section {name: "Mexico: Reaping Benefits from Nearshoring"}),
+(r2)-[:HAS_SECTION]->(s14:section {name: "China: Policy Stimulus is Vital to Economic Growth"})
+
+// Create fields for "The Global Outlook: Limited Upside in the Short Term" section
+CREATE
+(s8)-[:HAS_FIELD]->(f42:field {name: "Global GDP Growth Forecast", description: "Projected slight easing in global GDP growth for 2024 due to deceleration in major economies."}),
+(s8)-[:HAS_FIELD]->(f43:field {name: "Inflation Trends", description: "Average world inflation expected to decrease, with significant drops in energy prices from their peak in 2022."}),
+(s8)-[:HAS_FIELD]->(f44:field {name: "Monetary Policy Directions", description: "Central banks approaching the end of the tightening cycle, with divergent paths on easing measures."}),
+(s8)-[:HAS_FIELD]->(f45:field {name: "Supply Chain Pressures", description: "Easing supply chain pressures contributing to reduced cost pressures across G20 countries."})
+
+// Create fields for "Global Trade and Value Chains: Shaken not Stirred" section
+CREATE
+(s9)-[:HAS_FIELD]->(f46:field {name: "World Trade Dynamics", description: "Stabilization in world trade and production, hinting at a potential paradigm shift in global economics."}),
+(s9)-[:HAS_FIELD]->(f47:field {name: "Supply Chain Reshaping", description: "Complex trade-offs and increased vulnerability due to geopolitical tensions and protectionist measures."}),
+(s9)-[:HAS_FIELD]->(f48:field {name: "Inflationary Risks", description: "Potential for inflationary episodes and upward pressure on future interest rates due to economic fragmentation."})
+
+// Create fields for "United States: The Economy Endures Headwinds" section
+CREATE
+(s10)-[:HAS_FIELD]->(f49:field {name: "Consumer Resilience", description: "U.S. consumers providing crucial support for domestic and global growth, despite monetary tightening."}),
+(s10)-[:HAS_FIELD]->(f50:field {name: "Housing Market Challenges", description: "Significant drops in mortgage applications and housing affordability reaching its lowest since the mid-1980s."}),
+(s10)-[:HAS_FIELD]->(f51:field {name: "Election Uncertainty", description: "2024 election uncertainties potentially delaying economic decisions and investments."}),
+(s10)-[:HAS_FIELD]->(f52:field {name: "Economic Forecast", description: "Potential for a soft landing with cautious optimism, despite not fully completing the journey."})
+
+// Create fields for "Canada: Economy continues to chill" section
+CREATE
+(s11)-[:HAS_FIELD]->(f53:field {name: "Economic Cooling", description: "A detailed analysis of Canada's economic slowdown, influenced by external trade tensions and domestic challenges."}),
+(s11)-[:HAS_FIELD]->(f54:field {name: "Housing Market Dynamics", description: "Exploration of the cooling housing market and its impact on overall economic health."}),
+(s11)-[:HAS_FIELD]->(f55:field {name: "Employment Trends", description: "Current employment trends and their implications for economic recovery."}),
+(s11)-[:HAS_FIELD]->(f56:field {name: "Fiscal Policy Measures", description: "Review of fiscal policy measures aimed at stimulating the economy."})
+
+// Create fields for "Brazil: More rate cuts to come" section
+CREATE
+(s12)-[:HAS_FIELD]->(f57:field {name: "Monetary Policy Outlook", description: "Anticipation of further rate cuts by the Banco Central do Brasil in response to economic indicators."}),
+(s12)-[:HAS_FIELD]->(f58:field {name: "Agricultural Sector Growth", description: "Analysis of the agricultural sector's performance and its contribution to GDP growth."}),
+(s12)-[:HAS_FIELD]->(f59:field {name: "Inflationary Trends", description: "Examination of inflationary trends and their alignment with central bank targets."}),
+(s12)-[:HAS_FIELD]->(f60:field {name: "Economic Resilience", description: "Assessment of Brazil's economic resilience in the face of global and domestic challenges."})
+
+// Create fields for "Mexico: Reaping benefits from nearshoring" section
+CREATE
+(s13)-[:HAS_FIELD]->(f61:field {name: "Nearshoring Advantage", description: "Analysis of Mexico's economic benefits from nearshoring trends, particularly in manufacturing."}),
+(s13)-[:HAS_FIELD]->(f62:field {name: "Trade Relations", description: "Exploration of Mexico's evolving trade relations, especially with the United States."}),
+(s13)-[:HAS_FIELD]->(f63:field {name: "Investment Inflows", description: "Insight into foreign direct investment inflows and their impact on economic growth."}),
+(s13)-[:HAS_FIELD]->(f64:field {name: "Labor Market Dynamics", description: "Current state of Mexico's labor market and its readiness to support nearshoring opportunities."})
+
+// Create fields for "China: Policy stimulus is vital to economic growth" section
+CREATE
+(s14)-[:HAS_FIELD]->(f65:field {name: "Policy Stimulus Measures", description: "Evaluation of China's policy stimulus measures aimed at sustaining economic growth."}),
+(s14)-[:HAS_FIELD]->(f66:field {name: "Consumption and Growth", description: "Analysis of consumption patterns and their role in driving GDP growth."}),
+(s14)-[:HAS_FIELD]->(f67:field {name: "Technological Advancements", description: "Impact of technological advancements and green transformation on China's economy."}),
+(s14)-[:HAS_FIELD]->(f68:field {name: "Manufacturing and Infrastructure", description: "Review of manufacturing and infrastructure investments and their contribution to economic development."})
+CREATE (r2)-[:REFERS_TO]->(f12)
+
+
+
+MATCH (f1:field {name: "Total Revenue"}), (f20:field {name: "Total Revenues Projection"})
+MERGE (f1)-[:EQUAL]->(f20)
+
+
+MATCH (m1:model {name: "model_782951116"})
+CREATE (mapping6: mapping {report_name: "Global Economic Outlook - December 2023", upstream_source_type: "ml_model"})
+MERGE (mapping6)-[:MAP]->(m1)
+
+MATCH (mapping6:mapping {report_name: "Global Economic Outlook - December 2023", upstream_source_type: "ml_model"})
+MATCH (f42:field {name: "Global GDP Growth Forecast"})
+MERGE (mapping6)-[:MAP]->(f42)
