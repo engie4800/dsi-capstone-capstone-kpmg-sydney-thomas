@@ -34,11 +34,11 @@ The CourseInfo folder has the templates for your  reports, progress log, meeting
 
 The code can be placed in a folder named code, and the remaining files can be placed as .pdf files in the root directory.
 
-Instructions:
+**Instructions:**
 
-1. Code Folders: Graph Database, Final Chatbot, Automatic Testing
-2. Reports Folder: Reports (containing Midterm Progress Report, Final Report, Ethics Presentation Slides and Video)
-3. Final Presentation Folder: Presentation (final presentation for KPMG)
-4. Poster Folder: Poster
-5. Weekly Meeting Presentation Folder: Weekly Meeting Presentation
-6. Meeting Minutes: Weekly on Wednesday for 60 minutes
+**1. Code Folders: Graph Database, Final Chatbot, Automatic Testing**
+**2. Reports Folder: Reports (containing Midterm Progress Report, Final Report, Ethics Presentation Slides and Video)**
+**3. Final Presentation Folder: Presentation (final presentation for KPMG)**
+**4. Poster Folder: Poster**
+**5. Weekly Meeting Presentation Folder: Weekly Meeting Presentation**
+**6. Meeting Minutes: Weekly on Wednesday for 60 minutes**
