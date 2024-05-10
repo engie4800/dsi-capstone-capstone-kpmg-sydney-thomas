@@ -1,0 +1,25 @@
+{
+    "report_field_id": "revenue",
+    "upstream_source_type": "database_column",
+    "upstream_source_id": "sales_table_revenue_column",
+    "upstream_source_value": [
+        {
+            "depth": 1,
+            "type": "database",
+            "label": "sales"
+        },
+        {
+            "depth": 2,
+            "type": "table",
+            "label": "sales_table"
+        },
+        {
+            "depth": 3,
+            "type": "column",
+            "label": "revenue_column"
+        }
+    ],
+    "report_id": "sales_report",
+    "section_name": "Sales",
+    "field_name": "Revenue"
+}

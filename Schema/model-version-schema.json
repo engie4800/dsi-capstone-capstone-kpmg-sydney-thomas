@@ -1,0 +1,94 @@
+{
+  "name": "Model Version",
+  "type": "object",
+  "properties": {
+    "model_id": {
+      "type": "string",
+      "description": "The unique ID of the model.",
+      "example": "model_1234567890"
+    },
+    "version": {
+      "type": "number",
+      "description": "The version of the model.",
+      "example": 1
+    },
+    "input_data_elements": {
+        "type": "array",
+        "description": "The unique IDs of the input data elements.",
+        "items": {
+            "type": "object",
+            "properties": {
+                "uid": {
+                    "type": "string",
+                    "description": "The unique ID of the input data element.",
+                    "example": "input_1"
+                }
+            }
+        }
+    },
+    "output_data_element": {
+      "type": "string",
+      "description": "The unique ID of the output data element.",
+      "example": "output_1"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "The general metadata of the model.",
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "description": "The date and time when the model was created.",
+          "example": "2023-01-01T00:00:00Z"
+        },
+        "type": {
+          "type": "string",
+          "description": "The type of the model.",
+          "example": "classification"
+        }
+      }
+    },
+    "parameters": {
+      "type": "array",
+      "description": "The parameters of the model.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the parameter.",
+            "example": "parameter_1"
+          },
+          "value": {
+            "type": "string",
+            "description": "The value of the parameter.",
+            "example": "value_1"
+          }
+        }
+      }
+    },
+    "performance_metrics": {
+      "type": "array",
+      "description": "The performance metrics of the model.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the performance metric.",
+            "example": "accuracy"
+          },
+          "value": {
+            "type": "number",
+            "description": "The value of the performance metric.",
+            "example": 0.99
+          }
+        }
+      }
+    },
+    "created_by": {
+      "type": "string",
+      "description": "The user who created the model.",
+      "example": "user_1234567890"
+    }
+  }
+}

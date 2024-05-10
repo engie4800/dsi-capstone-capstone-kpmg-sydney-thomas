@@ -1,0 +1,96 @@
+{
+    "name": "Database Metadata",
+    "type": "object",
+    "properties": {
+        "database_name": {
+            "type": "string",
+            "description": "The name of the database.",
+            "example": "my_database"
+        },
+        "type": {
+            "type": "string",
+            "description": "The type of the database.",
+            "example": "relational"
+        },
+        "tables": {
+            "type": "array",
+            "description": "The tables in the database.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the table.",
+                        "example": "my_table"
+                    },
+                    "columns": {
+                        "type": "array",
+                        "description": "The columns in the table.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "The name of the column.",
+                                    "example": "my_column"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "description": "The type of the column.",
+                                    "example": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "business_group": {
+            "type": "string",
+            "description": "The business group that the database is associated with.",
+            "example": "marketing"
+        },
+        "key_contact_information": {
+            "type": "array",
+            "description": "The key contact information for the database.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the key contact.",
+                        "example": "John Smith"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "The email address of the key contact.",
+                        "example": "john.smith@example.com"
+                    }
+                }
+            }
+        },
+        "entitlements": {
+            "type": "array",
+            "description": "The database entitlements for users and service accounts.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "user_or_service_account": {
+                        "type": "string",
+                        "description": "The user or service account that is being granted entitlements.",
+                        "example": "john.smith@example.com"
+                    },
+                    "entitlements": {
+                        "type": "array",
+                        "description": "The entitlements that are being granted to the user or service account.",
+                        "items": {
+                            "type": "string",
+                            "description": "The type of entitlement (read, write, admin).",
+                            "example": "read"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

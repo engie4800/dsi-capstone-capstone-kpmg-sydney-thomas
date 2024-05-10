@@ -1,0 +1,71 @@
+{
+    "name": "Report Field to Upstream Source Mapping",
+    "type": "object",
+    "properties": {
+        "report_field_id": {
+            "type": "string",
+            "description": "The unique ID of the report field.",
+            "example": "sales_amount"
+        },
+        "upstream_source_type": {
+            "type": "string",
+            "description": "The type of the upstream source.",
+            "enum": [
+                "database_column",
+                "ml_model",
+                "transformation_query",
+                "etl_process",
+                "other_data_transformation_process"
+            ]
+        },
+        "upstream_source_id": {
+            "type": "string",
+            "description": "The unique ID of the upstream source.",
+            "example": "sales_table_sales_amount_column"
+        },
+        "upstream_source_value": {
+            "type": "array",
+            "description": "The value of the upstream source that is being used for the report field.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "depth": {
+                        "type": "number",
+                        "description": "The depth of the upstream source value.",
+                        "example": 1
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "The type of the upstream source value.",
+                        "enum": [
+                            "table",
+                            "column",
+                            "version",
+                            "output_name"
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "description": "The label of the upstream source value.",
+                        "example": "Sales Amount"
+                    }
+                }
+            }
+        },
+        "report_id": {
+            "type": "string",
+            "description": "The unique ID of the report.",
+            "example": "sales_report"
+        },
+        "section_name": {
+            "type": "string",
+            "description": "The name of the section that the report field belongs to.",
+            "example": "Sales"
+        },
+        "field_name": {
+            "type": "string",
+            "description": "The name of the report field.",
+            "example": "Sales Amount"
+        }
+    }
+}

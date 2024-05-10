@@ -36,7 +36,7 @@ The code can be placed in a folder named code, and the remaining files can be pl
 
 **Instructions:**
 
-**1. Code Folders: Graph Database, Final Chatbot, Automatic Testing**
+**1. Code Folders: Schema, Graph Database, Final Chatbot, Automatic Testing**
 
 **2. Reports Folder: Reports (containing Midterm Progress Report, Final Report, Ethics Presentation Slides and Video)**
 
