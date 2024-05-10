@@ -1,0 +1,130 @@
+Use Case,Prompts,Ground Truth
+1,What are the maintainers of report named Saudi Arabia Budget Report 2024,pbannink@kpmg.com
+1,What is the business group of report named Saudi Arabia Budget Report 2024?,KPMG Professional Services
+1,what is the entitlements of report named Saudi Arabia Budget Report 2024?,"[asinghi@kpmg.com,ialani@kpmg.com]"
+1,What is the description of the field named Economic Resilience?,Assessment of Brazil's economic resilience in the face of global and domestic challenges.
+1,What are the performance metrics of model named model_382569?,"[
+  {name: ""mean absolute error"", value: 19693},
+  {name: ""root mean squared error"", value: 176},
+  {name: ""R-squared"", value: 0.80}
+ ]"
+1,What are the author of model named model_382569?,Rain
+1,What are the author_email of model named model_382569?,rainp@kpmg.com
+1,What are the target of model model_5783759?,labor_market_readiness_level 
+1,What are the input columns of model named model_382569?,"[""real_estate_sales"", ""mortgage_approval"", ""new_housing_type"", ""new_housing_spending"", ""worker_employment"", ""sectors""]"
+1,What are the output columns of model named model_382569?,housing_market_trend
+1,What is the model type of mOdel_5783759?,Category Boosting
+1,Who is the author of report named GLOBAL Economic Outlook - December 2023?,rmayor@kpmg.com
+1,Who is the developer of model named model_701015291?,Harry
+1,What are the predictors of model_701015292?,"auditDate,financial_score,compliance_score,risk_factors"
+1,What is the format of the report named Saudi Arabia Budget Report 2024?,PDF Document
+1,What is the model type of model named model_701015291?,Neural Networks
+1,Who are the authors of the model named model_782951116?,"Alex, Martin"
+1,What is the created_at date for the model named model_701015291?,2024-02-12T20:59:17Z
+1,"What is the business group of the report named ""Global Economic Outlook - December 2023""?",KPMG International
+1,What is the version of model named model_382569?,1
+2,What are the business groups of report named Global Economic Outlook - December 2023 and report named Saudi Arabia Budget Report 2024?,"KPMG International, KPMG Professional Services"
+2,Who are the owners of the report named Global Economic Outlook - December 2023 and the report named Saudi Arabia Budget Report 2024?,"rmayor@kpmg.com, pbannink@kpmg.com"
+2,What are the author emails of model_4788750 and model_382569?,"sabv@kpmg.com, rainp@kpmg.com"
+2,Who are the authors of model_782951116 and model_382569?,"[Alex,Martin], [Luke]"
+2,What are the targets of model_782951116 and model_382569?,"revenue, agriculture_production"
+2,What are the report_format of report named Global Economic Outlook - December 2023 and report named Saudi Arabia Budget Report 2024?,"PDF Document, PDF Document"
+2,What are the section name of Global Economic Outlook - December 2023 report and Saudi Arabia Budget Report 2024 report?,"Mexico: Reaping Benefits from Nearshoring, United States: The Economy Endures Headwinds, Global Trade and Value Chains: Shaken not Stirred, The Global Outlook: Limited Upside in the Short Term,         Economic growth assumptions, Brazil: More Rate Cuts to Come, Canada: Economy Continues to Chill, China: Policy Stimulus is Vital to Economic Growth, Budget Summary, Risks and challenges, Economic indicators
+, Expenditure by sector, Key Takeaways, Budget 2024
+"
+2,What are the accraucy of model_701015291 and model_925814632?,"0.77, 0.88"
+2,What are the model types of model_382568 and model_382569?,"Support Vector Machine, Extreme Gradient Boosting"
+2,What are the model type and performence metric of model_701015292? ,"Random Forest, [accuracy,precision,recall]"
+2,When are the models model_782951116 and model_925814632 created?,"2024-02-12T20:59:17Z, 2024-02-20T09:00:00Z"
+2,What are the mean absolute error and r squared of model_782951116?,"10228, 0.95"
+2,Could you please tell me the creater and business_group of Saudi Arabia Budget Report 2024?       ,"pbannink@kpmg.com, KPMG Professional Services
+"
+2,Could you please tell me the predictors and target of model_5783759?,"[education_levels,wage_info,employment_sector,labor_force_participation,economic_growth_indicators,historical_nearshoring_trends], labor_market_readiness_level
+"
+2,What are the model types of 382568 model and 5783759 model?,"Support Vector Machine, Category Boosting"
+2,I want to know more about the Global Economic Outlook - December 2023 report. Please tell me something about this report!,"author: rmayor@kpmg.com
+business_group: KPMG International
+entitlements: jdoe@kpmg.com
+name: Global Economic Outlook - December 2023
+report_format: PDF Document"
+2,What are the author and entitlements of saudi arabia budget report 2024?,"pbannink@kpmg.com, [asinghi@kpmg.com,ialani@kpmg.com]
+
+"
+2,What are the versions of model_701015291 and model_701015292?,"1, 2"
+2,What are the descriptions of field Policy Stimulus Measures and Consumption and Growth?,"Evaluation of China's policy stimulus measures aimed at sustaining economic growth, Analysis of consumption patterns and their role in driving GDP growth.
+
+"
+2,"What are the output columns of model_4788750, model_382569 and model_382570?","consumption_growth, housing_market_trend, agriculture_production"
+3,How many models in the field 'Global Inflationary Pressures' have a precision higher than 0.6?,2
+3,How many models in the field 'Consumption and Growth' have an R-squared higher than 0.8?,1
+3,Which models have GDP as its input columns?,model_782951116
+3,Which models have GDP as its features?,model_782951116
+3,Which models are predicting REVENUE?,model_782951116
+3,Which models are predicting risk level?,"model_701015291, model_701015292"
+3,Could you please give me the name of the reports that have the sections with name containing 'Mexico'?,Global Economic Outlook - December 2023
+3,Could you please give me the name of the reports that have the fields with description containing 'GDP'?,"Global Economic Outlook - December 2023, Saudi Arabia Budget Report 2024"
+3,Which models are developed by Luke?,model_382568
+3,Which models are Neural Networks in the database?,model_701015291
+3,Which databases have the tables with the name containing 'revenue'?,sales
+3,Which reports belong to KPMG INTERNATIONAL?,Global Economic Outlook - December 2023
+3,How many reports are written by rmayor@kpmg.com?,1
+3,Which reports are PDF format?,"Global Economic Outlook - December 2023, Saudi Arabia Budget Report 2024"
+3,Which reports are written by pbannink@kpmg.com?,"Saudi Arabia Budget Report 2024, PDF Document"
+3,Which model has the highest accuracy in predicting risk level?,model_701015291
+3,Which logistic regression model is predicting GDP?,model_925814632
+3,Which model is built by Sab?,model_4788750
+3,Could you please provide the name and business group of the report containing sections contain 'Global Trade'?,"Global Economic Outlook - December 2023, KPMG International"
+3,Could you please provide the name and report format of the report containing sections contain 'Budget'?,"Saudi Arabia Budget Report 2024, PDF Document"
+4,What are the fields of section Key Takeaways?,"External Economic Shocks, 
+ Key Spending Categories, 
+ Government Fiscal Balance Efforts, 
+ Fiscal Indicators, and Domestic Economic Recovery"
+4,Can you tell me the fields in section Budget 2024?,"Revenue Growth, 
+ Cabinet Approval,
+ Total Revenues Projection,
+ Public Revenue Comparison and Tax Revenues"
+4,On which database does model_4788750 depend?,China
+4,Which tables has the report named Saudi Arabia Budget Report 2024 employed?,"economic_indicators_tb, 
+ tax_tb, 
+ trade_balance_tb, 
+ cost_tb, and revenue_tb"
+4,What report is the model 'model_382569' dependent on?,Global Economic Outlook - December 2023
+4,"What is the relationship between the table 'farming_land_tb' and 
+ column 'farming_methods'?",[:HAS_COLUMN]
+4,What is the relationship between the field 'Rapid Real GDP Growth' and report 'Global Economic Outlook - December 2023'?,[:REFERS_TO]
+4,Which MODEL utilize the table trade_balance_tb?,model_925814632 
+4,"What models are used in the field ""Global Inflationary Pressures""?","model_701015291, model_701015292"
+4,Which Columns in Revenue_TB are utilized in report Saudi Arabia Budget Report 2024?,"profitMargin_col, revenue_col"
+4,"What models are used in the report Global Economic Outlook - December 2023?
+","model_382568, model_382569, model_4788750, model_5783759"
+4,Which tables has been used the model model_5783759?,"nearshoring_history_tn, economic_indicators_tb, employment_data_tb"
+4,"I'm interested in the section China: Policy Stimulus is Vital to Economic Growth, what is the model type of the model included in this section?",model_4788750 
+4,"There are some data updated in the GDP database, I want to know which models are included in this database so it will be updated.","model_925814632, model_701015291
+"
+4,Which databases have the field Global Inflationary Pressures used?,"audit management, GDP"
+4,"What models are used in the report Saudi Arabia Budget Report 2024?
+","model_701015292, model_701015291, model_925814632, model_782951116"
+4,"I'm interested in the field Agricultural Sector Growth, which model is included in this field?",model_382568 
+4,"I'm interested in the model whose type is Extreme Gradient Boosting, what are the input columns of that model?","real_estate_sales,mortgage_approval,new_housing_type,new_housing_spending,worker_employment,sectors"
+4,What is the relationship between the model model_701015292 and column model_701015291?,[:ITERATE]
+4,Which database can I find 'mortgage_approval' column,Canada
+5,Does the model_782951116 predict GDP?,No
+5,Does the model_925814632 and model_701015291 use the table client_tb?,No
+5,Is there a relationship between model_382569 and database 'China'?,No
+5,Does model 'model_4788750' use the column named 'saving_over_income_rates'?,Yes
+5,Does the model_925814632 and model_782951116 use the database sales?,Yes
+5,Is there a mapping relationship between report named Saudi Arabia Budget Report 2024 and table named tax_tb?,Yes
+5,Does the model_925814632 and model_701015291 use the column interestRates_col?,Yes
+5,Does the model_925814632 and model_782951116 use the table tax_tb?,Yes
+5,"Does section ""Global Trade and Value Chains: Shaken Not Stirred"" have 4 fields?",No
+5,"Are the sections ""Brazil: More Rate Cuts to Come"" and section ""Global Trade and Value Chains: Shaken Not Stirred"" from the same report?",Yes
+5,"Is the column ""compliance_score"" used in the field ""Inflation Trends""?",No
+5,"Is the description in the field ""Total Revenue"" ""SAR 1,172 billion""?",Yes
+5,"Does the field ""Oil Consumption Estimates"" belong to section ""Economic growth assumptions""?",Yes
+5,Does Tina create the model_701015291?,No
+5,Is there a 3.0% YoY for the nominal GDP in the field Nominal GDP?,Yes
+5,Is the risk_factors column used in the report Global Economic Outlook - December 2023?,No
+5,"Do columns ""wage_trends"" and ""inflation_rates"" from the same model?",Yes
+5,Is the export_tb included in the database Brazil?,Yes
+5,"Does the section ""Brazil: More Rate Cuts to Come"" use the database Brazil?",Yes
+5,"Do the reports ""Saudi Arabia Budget Report 2024"" and ""Global Economic Outlook - December 2023"" have the same section ""The Global Outlook: Limited Upside in the Short Term""",No
