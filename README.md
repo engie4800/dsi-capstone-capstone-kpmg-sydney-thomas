@@ -9,11 +9,11 @@ This course provides a unique opportunity for students in the MS in Data Science
 Select a team captain (with or without help from mentor/instructor/supervisor)
 
 Record your names here in this format-
-1. Team captain name, UNI
-2. Member name, UNI
-3. Member name, UNI
-
-and so on.   
+1. Team captain Tina Cao, tc3334
+2. Member Lu Liu, ll3721
+3. Member Wanxin Luo, wl2930
+4. Member Xinwei Qiao, xq2236
+5. Member Yao Xie, yx2845 
 
 ## Instructions
 
@@ -33,4 +33,12 @@ The CourseInfo folder has the templates for your  reports, progress log, meeting
 4. Meeting Minutes
 
 The code can be placed in a folder named code, and the remaining files can be placed as .pdf files in the root directory.
-   
+
+Instructions:
+
+1. Code Folders: Graph Database, Final Chatbot, Automatic Testing
+2. Reports Folder: Reports (containing Midterm Progress Report, Final Report, Ethics Presentation Slides and Video)
+3. Final Presentation Folder: Presentation (final presentation for KPMG)
+4. Poster Folder: Poster
+5. Weekly Meeting Presentation Folder: Weekly Meeting Presentation
+6. Meeting Minutes: Weekly on Wednesday for 60 minutes
