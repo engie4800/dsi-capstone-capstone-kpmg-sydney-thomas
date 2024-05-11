@@ -47,3 +47,11 @@ The code can be placed in a folder named code, and the remaining files can be pl
 **5. Weekly Meeting Presentation Folder: Weekly Meeting Presentation**
 
 **6. Meeting Minutes: Weekly on Wednesday for 60 minutes**
+
+## Deployment
+
+You can use this link https://final-kpmg-chatbot.streamlit.app/ to test our chatbot. 
+
+If you want to run our code, please remember to use your own GPT API.
+
+(Note: Our Chatbot might give an openai.AuthenticationError if our API is leaked or we finished our API quota.) 
